@@ -3,7 +3,7 @@ name = "eNoval"
 version = "0.1.0"
 description = "A terminal-based txt noval reader."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "pyyaml>=6.0.2",
     "rich>=14.0.0",
