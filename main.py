@@ -18,27 +18,23 @@ CMD_CLEAR = "cls" if os.name == "nt" else "clear"
 console = Console()
 
 # 输出函数
-def print_error(msg):
+def print_error(msg) -> None:
     console.print(f"[bold red][ERROR] {msg}[/bold red]")
 
-def print_warning(msg):
+def print_warning(msg) -> None:
     console.print(f"[yellow][WARNING] {msg}[/yellow]")
 
-def print_info(msg):
+def print_info(msg) -> None:
     console.print(f"[green][INFO] {msg}[/green]")
 
-def get_terminal_size():
+def get_terminal_size() -> tuple[int, int]:
     try:
         size = shutil.get_terminal_size(fallback=(80, 24))
         return size.columns - 4, size.lines - 6
     except Exception as e:
         raise RuntimeError(f"无法获取终端尺寸：{str(e)}")
 
-# 简繁转换占位函数（当前直接返回原文）
-def convert_text(text):
-    return text
-
-def load_progress():
+def load_progress() -> dict:
     try:
         if os.path.exists(SAVE_FILE):
             with open(SAVE_FILE, "r", encoding="utf-8") as f:
@@ -48,14 +44,14 @@ def load_progress():
         print_error(f"加载阅读进度失败：{e}")
         return {}
 
-def save_progress(progress):
+def save_progress(progress) -> None:
     try:
         with open(SAVE_FILE, "w", encoding="utf-8") as f:
             yaml.safe_dump(progress, f)
     except Exception as e:
         print_error(f"保存阅读进度失败：{e}")
 
-def list_books():
+def list_books() -> list:
     try:
         if not os.path.exists(LIBRARY_DIR):
             os.makedirs(LIBRARY_DIR)
@@ -64,7 +60,7 @@ def list_books():
         print_error(f"读取 library 目录失败：{e}")
         return []
 
-def generate_pages(content, width, height):
+def generate_pages(content, width, height) -> tuple:
     if not isinstance(content, list):
         raise ValueError("内容必须是字符串列表。")
     if not all(isinstance(line, str) for line in content):
@@ -72,7 +68,6 @@ def generate_pages(content, width, height):
 
     pages, starts, current, line_count, total = [], [], [], 0, 0
     for line in content:
-        line = convert_text(line)
         wrapped = textwrap.wrap(line, width) or [""]
         for wline in wrapped:
             if line_count >= height:
@@ -100,7 +95,7 @@ def extract_chapters(content_lines, page_starts):
             chapters.append((line.strip(), current_page))
     return chapters
 
-def show_chapter_menu(chapters):
+def show_chapter_menu(chapters) -> None:
     try:
         term_width, term_height = get_terminal_size()
     except Exception as e:
@@ -120,7 +115,7 @@ def show_chapter_menu(chapters):
 
         for idx in range(page * page_size, min((page + 1) * page_size, total)):
             title, pnum = chapters[idx]
-            table.add_row(str(idx + 1), convert_text(title), str(pnum + 1))
+            table.add_row(str(idx + 1), title, str(pnum + 1))
 
         console.print(table)
         print(">>> [n]下一页 [p]上一页 [q]退出 [s]搜索")
@@ -226,7 +221,7 @@ def read_book(file_path, progress_data):
         else:
             print_warning("无效命令。请输入 [n/p/q/g/m/j/c/b]")
 
-def main():
+def main() -> None:
     os.system(CMD_CLEAR)
     print("📚 欢迎使用终端小说阅读器！")
 
