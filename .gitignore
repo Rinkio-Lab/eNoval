@@ -1,0 +1,42 @@
+# 📂 Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 📦 包构建
+build/
+dist/
+*.egg-info/
+
+# 🧪 单元测试缓存
+.cache/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# 🔐 虚拟环境
+.venv/
+env/
+venv/
+.uv/
+
+# 📋 IDE / 编辑器配置
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 📌 项目特有
+progress.yaml
+library/
+
+# 📃 日志和系统文件
+*.log
+.DS_Store
+Thumbs.db
+
+# 🔧 pyinstaller 打包生成物（如果未来用）
+*.spec
+*.exe
