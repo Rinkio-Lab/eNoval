@@ -66,20 +66,20 @@ def generate_pages(content, width, height) -> tuple:
     if not all(isinstance(line, str) for line in content):
         raise ValueError("内容中所有元素都必须是字符串。")
 
-    pages, starts, current, line_count, total = [], [], [], 0, 0
+    pages, starts, current_lines, line_count, total_lines = [], [], [], 0, 0
     for line in content:
-        wrapped = textwrap.wrap(line, width) or [""]
-        for wline in wrapped:
+        wrapped_lines = textwrap.wrap(line, width) or [""]
+        for wrapped_line in wrapped_lines:
             if line_count >= height:
-                pages.append("\n".join(current))
-                starts.append(total - line_count)
-                current, line_count = [], 0
-            current.append(wline)
+                pages.append("\n".join(current_lines))
+                starts.append(total_lines - line_count)
+                current_lines, line_count = [], 0
+            current_lines.append(wrapped_line)
             line_count += 1
-            total += 1
-    if current:
-        pages.append("\n".join(current))
-        starts.append(total - line_count)
+            total_lines += 1
+    if current_lines:
+        pages.append("\n".join(current_lines))
+        starts.append(total_lines - line_count)
     return pages, starts
 
 def extract_chapters(content_lines, page_starts):
