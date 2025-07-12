@@ -1,0 +1,399 @@
+error_prefix:
+  zh-cn: "[错误]"
+  en: "[ERROR]"
+  jp: "[エラー]"
+
+warning_prefix:
+  zh-cn: "[警告]"
+  en: "[WARNING]"
+  jp: "[警告]"
+
+info_prefix:
+  zh-cn: "[信息]"
+  en: "[INFO]"
+  jp: "[情報]"
+
+cannot_get_terminal_size:
+  zh-cn: "无法获取终端尺寸："
+  en: "Cannot get terminal size: "
+  jp: "ターミナルサイズを取得できません："
+
+load_progress_failed:
+  zh-cn: "加载阅读进度失败："
+  en: "Failed to load reading progress: "
+  jp: "読書進捗の読み込みに失敗しました："
+
+save_progress_failed:
+  zh-cn: "保存阅读进度失败："
+  en: "Failed to save reading progress: "
+  jp: "読書進捗の保存に失敗しました："
+
+read_library_failed:
+  zh-cn: "读取 library 目录失败："
+  en: "Failed to read library directory: "
+  jp: "ライブラリディレクトリの読み込みに失敗しました："
+
+content_must_be_list:
+  zh-cn: "内容必须是字符串列表。"
+  en: "Content must be a list of strings."
+  jp: "コンテンツは文字列のリストである必要があります。"
+
+content_elements_must_be_string:
+  zh-cn: "内容中所有元素都必须是字符串。"
+  en: "All elements in content must be strings."
+  jp: "コンテンツ内のすべての要素は文字列である必要があります。"
+
+chapter_extract_params_empty:
+  zh-cn: "章节提取参数不能为空。"
+  en: "Chapter extraction parameters cannot be empty."
+  jp: "章の抽出パラメータは空にできません。"
+
+chapter_menu_title:
+  zh-cn: "章节目录（共 {total} 章）- 第 {current} / {total_pages} 页"
+  en: "Chapter Directory (Total {total} Chapters) - Page {current} / {total_pages}"
+  jp: "章ディレクトリ（全 {total} 章）- {current} / {total_pages} ページ"
+
+chapter_menu_col_id:
+  zh-cn: "编号"
+  en: "ID"
+  jp: "ID"
+
+chapter_menu_col_title:
+  zh-cn: "章节标题"
+  en: "Chapter Title"
+  jp: "章タイトル"
+
+chapter_menu_col_page:
+  zh-cn: "页码"
+  en: "Page"
+  jp: "ページ"
+
+chapter_menu_prompt:
+  zh-cn: "[n]下一页 [p]上一页 [q]退出 [s]搜索"
+  en: "[n]Next Page [p]Previous Page [q]Quit [s]Search"
+  jp: "[n]次ページ [p]前ページ [q]終了 [s]検索"
+
+chapter_menu_input_keyword:
+  zh-cn: "输入关键词："
+  en: "Enter keyword: "
+  jp: "キーワードを入力してください："
+
+chapter_not_found:
+  zh-cn: "未找到匹配章节。"
+  en: "No matching chapters found."
+  jp: "一致する章は見つかりませんでした。"
+
+press_enter_to_continue:
+  zh-cn: "回车继续..."
+  en: "Press Enter to continue..."
+  jp: "Enterを押して続行..."
+
+read_file_failed:
+  zh-cn: "读取文件失败："
+  en: "Failed to read file: "
+  jp: "ファイルの読み込みに失敗しました："
+
+content_process_failed:
+  zh-cn: "内容处理失败："
+  en: "Content processing failed: "
+  jp: "コンテンツ処理に失敗しました："
+
+book_title_page_info:
+  zh-cn: "📘 {book_name} — 第 {current_page} / {total_pages} 页"
+  en: "📘 {book_name} — Page {current_page} / {total_pages}"
+  jp: "📘 {book_name} — {current_page} / {total_pages} ページ"
+
+main_menu_prompt:
+  zh-cn: "[n]下一页 [p]上一页 [q]退出 [g]跳页 [m]目录 [j]跳章节 [c]清除进度 [b]章节书签"
+  en: "[n]Next Page [p]Previous Page [q]Quit [g]Go to Page [m]Table of Contents [j]Jump to Chapter [c]Clear Progress [b]Chapter Bookmark"
+  jp: "[n]次ページ [p]前ページ [q]終了 [g]ページへ移動 [m]目次 [j]章へジャンプ [c]進捗クリア [b]章ブックマーク"
+
+jump_to_page_prompt:
+  zh-cn: "跳转到第几页？"
+  en: "Jump to which page? "
+  jp: "何ページ目にジャンプしますか？"
+
+invalid_page_number:
+  zh-cn: "请输入有效的页码。"
+  en: "Please enter a valid page number."
+  jp: "有効なページ番号を入力してください。"
+
+no_chapters_found:
+  zh-cn: "未找到章节。"
+  en: "No chapters found."
+  jp: "章が見つかりませんでした。"
+
+enter_chapter_number_prompt:
+  zh-cn: "请输入章节编号："
+  en: "Please enter chapter number: "
+  jp: "章番号を入力してください："
+
+invalid_chapter_number:
+  zh-cn: "无效编号。"
+  en: "Invalid chapter number."
+  jp: "無効な章番号です。"
+
+bookmark_current_chapter:
+  zh-cn: "标记当前章节为书签"
+  en: "Bookmark current chapter"
+  jp: "現在の章をブックマークする"
+
+bookmark_saved:
+  zh-cn: "书签已保存！"
+  en: "Bookmark saved!"
+  jp: "ブックマークが保存されました！"
+
+no_bookmark_found:
+  zh-cn: "未找到书签。"
+  en: "No bookmark found."
+  jp: "ブックマークが見つかりませんでした。"
+
+clear_progress_confirm:
+  zh-cn: "确定要清除当前书籍的阅读进度吗？(y/n)"
+  en: "Are you sure you want to clear the reading progress for the current book? (y/n)"
+  jp: "現在の本の読書進捗をクリアしてもよろしいですか？(y/n)"
+
+progress_cleared:
+  zh-cn: "阅读进度已清除。"
+  en: "Reading progress cleared."
+  jp: "読書進捗がクリアされました。"
+
+progress_not_cleared:
+  zh-cn: "阅读进度未清除。"
+  en: "Reading progress not cleared."
+  jp: "読書進捗はクリアされませんでした。"
+
+select_book_prompt:
+  zh-cn: "请选择要阅读的书籍："
+  en: "Please select a book to read: "
+  jp: "読む本を選択してください："
+
+no_books_found:
+  zh-cn: "未找到任何书籍。请将 .txt 小说文件放入 library 目录中。"
+  en: "No books found. Please place .txt novel files in the library directory."
+  jp: "本が見つかりませんでした。.txt小説ファイルをlibraryディレクトリに入れてください。"
+
+enter_book_number_prompt:
+  zh-cn: "请输入书籍编号："
+  en: "Please enter book number: "
+  jp: "本の番号を入力してください："
+
+invalid_book_number:
+  zh-cn: "无效的书籍编号。"
+  en: "Invalid book number."
+  jp: "無効な本の番号です。"
+
+exit_message:
+  zh-cn: "感谢阅读，下次再见！"
+  en: "Thanks for reading, see you next time!"
+  jp: "お読みいただきありがとうございます。また次回！"
+
+welcome_message:
+  zh-cn: "📚 欢迎使用终端小说阅读器！"
+  en: "📚 Welcome to the Terminal Novel Reader!"
+  jp: "📚 ターミナル小説リーダーへようこそ！"
+
+no_books_found_message:
+  zh-cn: "请将小说（.txt）文件放入 library 文件夹中。"
+  en: "Please place .txt novel files in the library folder."
+  jp: "小説（.txt）ファイルをlibraryフォルダに入れてください。"
+
+last_read_book_info:
+  zh-cn: "\n📌 检测到上次阅读：{book_name}"
+  en: "\n📌 Last read: {book_name}"
+  jp: "\n📌 前回読んだ本：{book_name}"
+
+continue_reading_prompt:
+  zh-cn: "是否继续阅读？(Y/n)"
+  en: "Do you want to continue reading? (Y/n)"
+  jp: "読書を続けますか？(Y/n)"
+
+available_books_title:
+  zh-cn: "\n📂 可阅读的小说："
+  en: "\n📂 Available Novels:"
+  jp: "\n📂 読める小説："
+
+book_list_col_id:
+  zh-cn: "编号"
+  en: "ID"
+  jp: "ID"
+
+book_list_col_title:
+  zh-cn: "书名"
+  en: "Book Title"
+  jp: "書名"
+
+invalid_book_number_range:
+  zh-cn: "输入的序号超出范围。"
+  en: "The entered number is out of range."
+  jp: "入力された番号は範囲外です。"
+
+invalid_number_input:
+  zh-cn: "请输入有效的数字。"
+  en: "Please enter a valid number."
+  jp: "有効な数字を入力してください。"
+
+an_error_occurred:
+  zh-cn: "发生了错误："
+  en: "An error occurred: "
+  jp: "エラーが発生しました："
+
+unnamed_chapter:
+  zh-cn: "未命名章节"
+  en: "Unnamed Chapter"
+  jp: "無題の章"
+
+chapter_marked:
+  zh-cn: "已标记章节：{title}"
+  en: "Chapter marked: {title}"
+  jp: "章をマークしました：{title}"
+
+no_chapter_to_mark:
+  zh-cn: "当前页无可标记章节。"
+  en: "No chapter can be marked on the current page."
+  jp: "現在のページにはマークできる章がありません。"
+
+current_book_progress_cleared:
+  zh-cn: "已清除当前书籍进度。"
+  en: "Current book progress cleared."
+  jp: "現在の本の進捗がクリアされました。"
+
+no_progress_to_clear:
+  zh-cn: "没有可清除的阅读进度。"
+  en: "No reading progress to clear."
+  jp: "クリアする読書進捗がありません。"
+
+progress_saved:
+  zh-cn: "进度已保存，下次继续阅读！"
+  en: "Progress saved, see you next time!"
+  jp: "進捗が保存されました。また次回！"
+
+invalid_command_read_book:
+  zh-cn: "无效命令。请输入 [n/p/q/g/m/j/c/b]"
+  en: "Invalid command. Please enter [n/p/q/g/m/j/c/b]"
+  jp: "無効なコマンドです。[n/p/q/g/m/j/c/b]を入力してください"
+
+bookmark_menu_prompt:
+  zh-cn: "[a]添加书签 [d]删除书签 [l]列出书签 [q]退出"
+  en: "[a]Add Bookmark [d]Delete Bookmark [l]List Bookmarks [q]Quit"
+  jp: "[a]ブックマークを追加 [d]ブックマークを削除 [l]ブックマークを一覧表示 [q]終了"
+
+enter_chapter_number_to_bookmark:
+  zh-cn: "输入要添加书签的章节编号："
+  en: "Enter chapter number to add bookmark: "
+  jp: "ブックマークを追加する章番号を入力してください："
+
+enter_bookmark_name:
+  zh-cn: "输入书签名称："
+  en: "Enter bookmark name: "
+  jp: "ブックマーク名を入力してください："
+
+bookmark_added_successfully:
+  zh-cn: "书签添加成功。"
+  en: "Bookmark added successfully."
+  jp: "ブックマークが正常に追加されました。"
+
+bookmark_name_cannot_be_empty:
+  zh-cn: "书签名称不能为空。"
+  en: "Bookmark name cannot be empty."
+  jp: "ブックマーク名は空にできません。"
+
+enter_valid_number:
+  zh-cn: "请输入有效编号。"
+  en: "Please enter a valid number."
+  jp: "有効な数字を入力してください。"
+
+existing_bookmarks:
+  zh-cn: "现有书签："
+  en: "Existing bookmarks:"
+  jp: "既存のブックマーク："
+
+enter_bookmark_name_to_delete:
+  zh-cn: "输入要删除的书签名称："
+  en: "Enter bookmark name to delete: "
+  jp: "削除するブックマーク名を入力してください："
+
+bookmark_deleted_successfully:
+  zh-cn: "书签删除成功。"
+  en: "Bookmark deleted successfully."
+  jp: "ブックマークが正常に削除されました。"
+
+bookmark_not_exist:
+  zh-cn: "书签不存在。"
+  en: "Bookmark does not exist."
+  jp: "ブックマークは存在しません。"
+
+no_bookmarks_to_delete:
+  zh-cn: "没有书签可删除。"
+  en: "No bookmarks to delete."
+  jp: "削除するブックマークがありません。"
+
+no_bookmarks:
+  zh-cn: "没有书签。"
+  en: "No bookmarks."
+  jp: "ブックマークがありません。"
+
+page_number:
+  zh-cn: "第 {page_num} 页"
+  en: "Page {page_num}"
+  jp: "{page_num}ページ"
+
+invalid_command:
+  zh-cn: "无效命令。"
+  en: "Invalid command."
+  jp: "無効なコマンドです。"
+
+settings_menu_option:
+  zh-cn: "[s]设置"
+  en: "[s]Settings"
+  jp: "[s]設定"
+
+settings_menu_title:
+  zh-cn: "⚙️ 设置"
+  en: "⚙️ Settings"
+  jp: "⚙️ 設定"
+
+current_language_setting:
+  zh-cn: "当前语言：{lang}"
+  en: "Current Language: {lang}"
+  jp: "現在の言語：{lang}"
+
+settings_menu_prompt:
+  zh-cn: "[1]更改语言 [q]退出"
+  en: "[1]Change Language [q]Quit"
+  jp: "[1]言語変更 [q]終了"
+
+available_languages:
+  zh-cn: "可用语言："
+  en: "Available Languages:"
+  jp: "利用可能な言語："
+
+enter_new_language_code:
+  zh-cn: "输入新的语言代码 (zh-cn, en, jp)："
+  en: "Enter new language code (zh-cn, en, jp):"
+  jp: "新しい言語コードを入力してください（zh-cn, en, jp）："
+
+language_set_successfully:
+  zh-cn: "语言已成功设置为 {lang}！"
+  en: "Language set to {lang} successfully!"
+  jp: "言語を {lang} に設定しました！"
+
+failed_to_save_config:
+  zh-cn: "保存配置失败："
+  en: "Failed to save config: "
+  jp: "設定の保存に失敗しました："
+
+invalid_language_code:
+  zh-cn: "无效的语言代码。"
+  en: "Invalid language code."
+  jp: "無効な言語コードです。"
+
+main_menu_options:
+  zh-cn: "[1]阅读章节 [2]阅读书籍 [3]清除进度 [s]设置"
+  en: "[1]Read Chapter [2]Read Book [3]Clear Progress [s]Settings"
+  jp: "[1]章を読む [2]本を読む [3]進捗をクリア [s]設定"
+
+enter_main_menu_choice:
+  zh-cn: "请输入主菜单选项"
+  en: "Enter main menu choice"
+  jp: "メインメニューの選択肢を入力してください"
